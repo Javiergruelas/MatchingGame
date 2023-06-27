@@ -76,6 +76,12 @@
     margin-right: 40px;
   }
     
+.start-button {
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    padding-bottom: 5px;
+}
 .reset-button {
     display: flex;  
     justify-content: center;  
