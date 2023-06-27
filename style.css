@@ -1,0 +1,180 @@
+
+:root {
+    --card-width: 125px;
+    --card-height: 175px;
+  }
+  /* Animated Background */
+  
+  
+  html {
+    height: 100%;
+    /* max-height: 600px; */
+    width: 100%;
+    background-color: hsla(200,40%,30%,.4);
+    background-image:   
+      url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+      url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+      url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+      url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+      url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+    background-repeat: repeat-x;
+    background-position: 
+      0 20%,
+      0 100%,
+      0 50%,
+      0 100%,
+      0 0;
+    background-size: 
+      2500px,
+      800px,
+      500px 200px,
+      1000px,
+      400px 260px;
+    animation: 50s para infinite linear;
+    }
+  
+  @keyframes para {
+    100% {
+      background-position: 
+        -5000px 20%,
+        -800px 95%,
+        500px 50%,
+        1000px 100%,
+        400px 0;
+      }
+    }
+  /* end of animated background */
+  
+  
+  body {
+    margin: 0;
+  /*   background: url(img/background.png); */
+    background-position: center;
+    background-size: cover;
+    color: #56adf0;
+    font-family: 'Nothing You Could Do', cursive;
+    text-shadow: 2px 2px #484e51;
+  }
+  
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  #ui-container {
+    text-align: center;
+  }
+  
+  #ui-container h3 {
+    margin: 0;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  #ui-container h3:first-child {
+    margin-right: 40px;
+  }
+  
+  #card-container {
+    font-size:0;
+    margin: 50px auto;
+    width: calc((var(--card-width) + 24px) * 4);
+  }
+  
+  .card {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    width: var(--card-width);
+    height: var(--card-height);
+    border: 2px solid transparent;  
+    overflow: hidden;
+  }
+  
+  /* Style the two logo images themselves. */
+  .card-down,
+  .card-up {
+    /* Take images out of the flow. */
+    position: absolute;
+  
+    width: 100%;
+    height: 100%;
+  
+    /* When facing away from the screen each image should be hidden. */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    transition-duration: .3s;
+  }
+  
+  .card-down {
+    background-image: url(img/card.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card-up {
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  
+  .flipped .card-down {
+    transform: rotateY(180deg);
+  }
+  
+  .flipped .card-up {
+    transform: rotateY(0deg);
+  }
+  
+  .image-1 .card-up {
+    background-image: url(img/image-1.png), linear-gradient(#72dbf4, #72dbf4);
+  }
+  
+  .image-2 .card-up {
+    background-image: url(img/image-2.png), linear-gradient(#72dbf4, #72dbf4);
+  }
+  
+  .image-3 .card-up {
+    background-image: url(img/image-3.png), linear-gradient(#72dbf4, #72dbf4);
+  }
+  
+  .image-4 .card-up {
+    background-image: url(img/image-4.png), linear-gradient(#72dbf4, #72dbf4);
+  }
+  
+  .image-5 .card-up {
+    background-image: url(img/image-5.png), linear-gradient(#72dbf4, #72dbf4);
+  }
+  
+  .image-6 .card-up {
+    background-image: url(img/image-6.png), linear-gradient(#72dbf4, #72dbf4);
+  }
+  
+  .glow {
+      border: 1px solid transparent;    
+      transition: border 0.1s linear, box-shadow 0.1s linear;
+  }
+  
+  
+  @keyframes border-glow {
+    from {
+      border: 2px solid transparent;   
+      box-shadow: none;
+    }
+  
+    80% {
+      border-color: blue;
+      box-shadow: 0 0 10px blue;
+    }
+  
+    to {
+      border: 2px solid transparent;   
+      box-shadow: none;
+    }
+  }
+  
+  .border-glow {
+    animation: border-glow 1s;
+  }
