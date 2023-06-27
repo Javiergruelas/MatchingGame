@@ -76,6 +76,13 @@
     margin-right: 40px;
   }
   
+  #reset-button {
+
+        text-align: center;
+      
+
+  }
+
   #card-container {
     font-size:0;
     margin: 50px auto;
