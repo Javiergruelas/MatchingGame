@@ -43,7 +43,6 @@ function shuffleCardImageClasses() {
 }
 shuffleCardImageClassesTest();
 
-;
 
 function createCards(parentElement, shuffledImageClasses) {
   // Step 1: Make an empty array to hold our card objects.
