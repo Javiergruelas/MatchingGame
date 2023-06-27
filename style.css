@@ -75,6 +75,16 @@
   #ui-container h3:first-child {
     margin-right: 40px;
   }
+
+#time {
+    display: flex;  
+    justify-content: center;  
+    align-items: center; 
+    padding-top: 10px; 
+    font-size: 20px;
+    color: #fff;
+    
+}
     
 .start-button {
     display: flex;  
