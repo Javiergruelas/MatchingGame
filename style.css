@@ -76,11 +76,16 @@
     margin-right: 40px;
   }
     
-    
-    .button-22 {
+.reset-button {
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+
+.button-22 {
       align-items: center;
       appearance: button;
-      background-color: #0276FF;
+      background-color: #56adf0;
       border-radius: 8px;
       border-style: none;
       box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
@@ -90,7 +95,7 @@
       display: flex;
       flex-direction: row;
       flex-shrink: 0;
-      font-family: "RM Neue",sans-serif;
+      font-family: 'Nothing You Could Do', cursive;
       font-size: 100%;
       line-height: 1.15;
       margin: 0;
